@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">sample-sms-reader</string>
+    <string name="edit_message">Veuillez entrer un message</string>
+    <string name="button_speak">Speak</string>
+
+</resources>
