@@ -32,12 +32,16 @@ public class ReadSMSActivity extends Activity implements TextToSpeech.OnInitList
 			    speakMessage();
 		    }
 	    });
+
+
     }
 
 	public void speakMessage(){
 		String text = txtText.getText().toString();
 		tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
 	}
+
+
 
 	@Override
 	public void onInit(int status) {
@@ -50,7 +54,6 @@ public class ReadSMSActivity extends Activity implements TextToSpeech.OnInitList
 				Log.e("TTS", "This Language is not supported");
 			} else {
 				btnSpeak.setEnabled(true);
-				speakMessage();
 			}
 
 		} else {
